@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORLD BIGGEST SERVICE PLATFORM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>WORLD BIGGEST SERVICE PLATFORM</h3>
+    </div>
+
+    <div class="swiper-container image-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/1.jpg" alt="">
+                <h2 class="heading">Academic</h2><p class="content">We provide good care at academic.</p></div>
+            <div class="swiper-slide"><img src="images/2.jpg" alt="">
+                <h2 class="heading">Medical</h2><p class="content">We provide good care at medical.</p></div>
+            <div class="swiper-slide"><img src="images/3.jpg" alt="">
+                <h2 class="heading">Low</h2><p class="content">We provide good care at low.</p></div>
+            <div class="swiper-slide"><img src="images/4.jpg" alt="">
+                <h2 class="heading">Tecnology</h2><p class="content">We provide good care at tecnology.</p></div>
+            <div class="swiper-slide"><img src="images/5.jpg" alt="">
+                <h2 class="heading">team work</h2><p class="content">We provide good care at team work.</p></div>
+        </div>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+<!-- script part  -->
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+
+var swiper = new Swiper(".image-slider", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2,
+        slideShadows: true,
+    },
+    loop:true,
+    autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+    },
+});    
+</script>
+
+
+</body>
+</html>
